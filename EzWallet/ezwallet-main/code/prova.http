@@ -1,0 +1,19 @@
+GET http://localhost:3000/api/users
+
+
+###
+
+POST http://localhost:3000/api/login
+content-type: application/json
+
+{
+    "email" : "a@b.it",
+    "password" : "password"
+
+}
+
+###
+
+GET  http://localhost:3000/api/categories
+content-type: application/json
+Set-Cookie: accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYi5pdCIsImlkIjoiNjQ1YjVhYzAyNDcyYzI0Yjc4NTZhYTg0IiwidXNlcm5hbWUiOiJyb3NhcmlvIiwicm9sZSI6IlJlZ3VsYXIiLCJpYXQiOjE2ODQxNTc4NDcsImV4cCI6MTY4NDE2MTQ0N30.MAn_JKeUKACj1kLqutBDtBbTI9T9Rw84-r5uJ1YkMN8;refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYi5pdCIsImlkIjoiNjQ1YjVhYzAyNDcyYzI0Yjc4NTZhYTg0IiwidXNlcm5hbWUiOiJyb3NhcmlvIiwicm9sZSI6IlJlZ3VsYXIiLCJpYXQiOjE2ODQxNTc4NDcsImV4cCI6MTY4NDc2MjY0N30.BcSkiDIuqFobUsSVAZftnqHjBezta56qB_HyDESJ-XQ; Max-Age=604800; Domain=localhost; Path=/api; Expires=Mon, 22 May 2023 13:37:27 GMT; HttpOnly; Secure; SameSite=None
